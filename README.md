@@ -20,4 +20,9 @@ An enterprise-grade Chrome Extension (Manifest V3) for high-performance stream s
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/ahmedbaligh0/StreamSniffer-Pro.git](https://github.com/ahmedbaligh0/StreamSniffer-Pro.git)
+   git clone https://github.com/ahmedbaligh0/StreamSniffer-Pro.git
+   ```
+2. Open Google Chrome (or any Chromium browser).
+3. Navigate to `chrome://extensions`.
+4. Enable **Developer mode** in the top-right corner.
+5. Click **Load unpacked** and select the extension folder.
