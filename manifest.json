@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "StreamSniffer Pro: Quantum Gold Edition",
+  "version": "18.1.0",
+  "description": "Zero-heap OPFS stream assembler, resilient HLS/DASH packet demuxer, AES-128 decryptor, and universal media sniffer.",
+  "permissions": [
+    "webRequest",
+    "downloads",
+    "storage",
+    "activeTab",
+    "offscreen",
+    "alarms",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["injected.js"],
+      "world": "MAIN",
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "world": "ISOLATED",
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "StreamSniffer Pro"
+  },
+  "minimum_chrome_version": "116"
+}
