@@ -8,6 +8,7 @@
 > **An enterprise-grade Chrome Extension for high-performance stream sniffing, live bandwidth telemetry, multi-quality HLS/DASH extraction, and in-order OPFS disk streaming.**
 
 ![StreamSniffer Pro Interface](screenshot.png)
+
 *(Preview: Live telemetry HUD and multi-quality variant selector)*
 
 ---
